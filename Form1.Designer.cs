@@ -267,6 +267,7 @@
             this.btnNewGame.TabIndex = 0;
             this.btnNewGame.Text = "NEW GAME";
             this.btnNewGame.UseVisualStyleBackColor = true;
+            this.btnNewGame.Click += new System.EventHandler(this.btnNewGame_Click);
             // 
             // btnReset
             // 
@@ -277,6 +278,7 @@
             this.btnReset.TabIndex = 1;
             this.btnReset.Text = "RESET";
             this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // panelTitle
             // 
@@ -312,20 +314,21 @@
             this.lblPlayerTurnValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPlayerTurnValue.Location = new System.Drawing.Point(217, 102);
             this.lblPlayerTurnValue.Name = "lblPlayerTurnValue";
-            this.lblPlayerTurnValue.Size = new System.Drawing.Size(75, 73);
+            this.lblPlayerTurnValue.Size = new System.Drawing.Size(0, 73);
             this.lblPlayerTurnValue.TabIndex = 12;
-            this.lblPlayerTurnValue.Text = "X";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(1275, 837);
             this.Controls.Add(this.panelTitle);
             this.Controls.Add(this.panelPlayers);
             this.Controls.Add(this.flpTiles);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.flpTiles.ResumeLayout(false);
             this.panelPlayers.ResumeLayout(false);
