@@ -35,6 +35,7 @@ namespace TicTacToe {
             this.btnTile7.Text = string.Empty;
             this.btnTile8.Text = string.Empty;
             this.btnTile9.Text = string.Empty;
+            hasWinner = false;
         }
 
         /*
